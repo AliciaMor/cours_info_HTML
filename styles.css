@@ -1,3 +1,4 @@
+/* --- BODY & FONTS --- */
 body {
   background-image: url("https://i.pinimg.com/736x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg");
   background-size: cover;
@@ -7,11 +8,11 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+/* --- HEADER --- */
 header {
   font-size: 60pt;
   color: #ffffff;
   text-align: center;
-  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   position: fixed;
   background-image: url("https://i.pinimg.com/736x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg");
@@ -24,10 +25,7 @@ header {
   z-index: 1000;
 }
 
-header:hover {
-  color: #DDC6F1;
-}
-
+/* --- MAIN / IMAGES STANDARD --- */
 main {
   display: flex;
   justify-content: center;
@@ -37,49 +35,23 @@ main {
   text-align: center;
   padding: 160px 20px 60px;
 }
-h2{
-color:#ffffff;
-    }
-.info-box_systeme_solaire{
-    position: fixed;
-    bottom:30px;
-    left:50%;
-    transform: translateX(-50%);
-  background: rgba(0,0,0,0.7);
-  padding: 10px 20px;
-  border-radius: 8px;
-  display: none;
-  width: 300px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-    transition: opacity 0.5s ease;
-    z-index: 1000;
-}
-.info-box_systeme_solaire.show{
-    display: block;
-    opacity: 1;
-    }
 
-.zone_systeme_solaire {
-  position: absolute;
-  cursor: pointer;
-border-radius:50%;
+/* --- H2 --- */
+h2 {
+  color: #ffffff;
 }
-.zone_systeme_solaire:hover{
-    border-color:rgba(255,255,255,0.8);
-    background-color:rgba(255,255,255,0.1);
-        }
 
 h2:hover {
   color: #61153D;
   font-weight: bolder;
 }
 
+/* --- PARAGRAPHES --- */
 p {
   color: #ffffff;
 }
 
+/* --- TABLES --- */
 table {
   border-collapse: collapse;
 }
@@ -91,44 +63,47 @@ td, th {
   padding: 3px;
 }
 
+/* --- IMAGE CONTAINERS --- */
 .image-container_standard {
   position: relative;
-    width:50vw;
-    height:50vh;
-    overflow: hidden;
+  width: 50vw;
+  height: 50vh;
+  overflow: hidden;
   display: inline-block;
   text-align: center;
 }
+
 .image-container_systeme_solaire {
   position: relative;
-    width:100vw;
-    height:100vh;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   display: inline-block;
   text-align: center;
 }
+
+/* --- IMAGES --- */
 .img_standard {
-  width:70%;
-    height:70%;
-    object-fit: cover;
-    border-radius:0;
-    display:block;
-    margin:0 auto;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .img_systeme_solaire {
-  width:100%;
-    height:100%;
-    object-fit: cover;
-    border-radius:0;
-    display:block;
-    margin:0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
+/* --- HIDDEN TEXT --- */
 .hidden-text {
   position: absolute;
   bottom: 10px;
@@ -142,29 +117,73 @@ td, th {
   width: 80%;
   opacity: 0;
   transition: opacity 0.4s ease, transform 0.4s ease;
-    z-index: 5;
+  z-index: 5;
 }
 
 .image-container_standard:hover .hidden-text {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
-.back-button { position:fixed;
-              top:20px;
-              left:20px;
-              padding: 10px 14px;
-              background: rgba(0,0,0,0);
-              color: #ffffff;
-              border-radius: 6px;
-              text-decoration: none; 
-              font-size: 60px;
-              transition: background 0.3s ease;
-              z-index: 2000;
+/*---BUTTON VERS LES INFOS GENERALES---*/
+.Infos_generales_systeme_solaire {
+    background: rgba(0,0,0,0);
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none; 
+    font-size: 20px;
+    transition: background 0.3s ease;
+    z-index: 2000;
 }
+/* --- BACK BUTTON --- */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0);
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none; 
+  font-size: 55px;
+  transition: background 0.3s ease;
+  z-index: 2000;
+}
+
 .back-button:hover {
-    background: rgba(255,255,255, 0.1);
+  background: rgba(255,255,255, 0.1);
 }
 
+/* --- INFO BOX SYSTEME SOLAIRE --- */
+.info-box_systeme_solaire {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: none;
+  width: 300px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
 
+.info-box_systeme_solaire.show {
+  display: block;
+  opacity: 1;
+}
 
+/* --- ZONES CLICABLES --- */
+.zone_systeme_solaire {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;s
+}
 
+.zone_systeme_solaire:hover {
+  border-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.1);
+}
