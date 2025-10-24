@@ -8,10 +8,10 @@ body {
 }
 
 header {
-  font-size: 40pt;
+  font-size: 60pt;
   color: #ffffff;
   text-align: center;
-  font-family: "BBH Sans Bartle", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   position: fixed;
   background-image: url("https://i.pinimg.com/736x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg");
@@ -64,8 +64,7 @@ color:#ffffff;
 .zone_systeme_solaire {
   position: absolute;
   cursor: pointer;
-    border: 2px solid rgba(255,255,255,0.2);
-    border-radius:50%;
+border-radius:50%;
 }
 .zone_systeme_solaire:hover{
     border-color:rgba(255,255,255,0.8);
@@ -150,3 +149,22 @@ td, th {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+.back-button { position:fixed;
+              top:20px;
+              left:20px;
+              padding: 10px 14px;
+              background: rgba(0,0,0,0);
+              color: #ffffff;
+              border-radius: 6px;
+              text-decoration: none; 
+              font-size: 60px;
+              transition: background 0.3s ease;
+              z-index: 2000;
+}
+.back-button:hover {
+    background: rgba(255,255,255, 0.1);
+}
+
+
+
+
