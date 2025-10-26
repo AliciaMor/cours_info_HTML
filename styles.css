@@ -24,18 +24,60 @@ header {
   padding: 25px;
   z-index: 1000;
 }
-
+#main-header {
+    font-size: 60pt;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    position: fixed;background-image: url("https://i.pinimg.com/736x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg");
+    background-size: cover;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 25px;
+    z-index: 1000; 
+}
+#main-header .hover-text{
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    white-space: nowrap;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+#main-header:hover .hover-text{
+    display:block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0%);
+}
 /* --- MAIN / IMAGES STANDARD --- */
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  text-align: center;
-  padding: 160px 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    padding: 160px 20px 60px;
 }
-
+#main-big_bang{ 
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+    padding: 160px 20px 60px;
+    font-weight:bolder;
+}
 /* --- H2 --- */
 h2 {
   color: #ffffff;
@@ -48,9 +90,14 @@ h2:hover {
 
 /* --- PARAGRAPHES --- */
 p {
-  color: #ffffff;
+    color: #ffffff;
 }
-
+#p-big_bang{
+    color:#ffffff;
+    line-height: 1.9;
+}
+    
+}
 /* --- TABLES --- */
 table {
   border-collapse: collapse;
@@ -158,6 +205,13 @@ td, th {
     color: #ffffff;
     z-index: 2000; 
     left: 70%;
+    top: 75px;
+}
+.txt-systeme_solaire {
+    position: fixed;
+    color: #ffffff;
+    z-index: 2000; 
+    left: 80%;
     top: 75px;
 }
 /* --- INFO BOX SYSTEME SOLAIRE --- */
