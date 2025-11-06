@@ -1,6 +1,6 @@
 /* --- BODY & FONTS --- */
 body {
-  background-image: url("https://i.pinimg.com/736x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg");
+  background-image: url("https://i.pinimg.com/1200x/cc/5a/09/cc5a0943524a75b660286dd18c24a715.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -10,44 +10,42 @@ body {
 
 /* --- HEADER --- */
 header {
-  font-size: 60pt;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 400;
-  position: fixed;
-  background-image: url("https://i.pinimg.com/736x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg");
-  background-size: cover;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  padding: 25px;
-  z-index: 1000;
+    font-size: 60pt;
+    color: #ffffff;
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
 }
 #main-header {
     font-size: 60pt;
     color: #ffffff;
     text-align: center;
-    font-weight: 400;
-    position: fixed;background-image: url("https://i.pinimg.com/736x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg");
-    background-size: cover;
+    font-weight: 700;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    padding: 25px;
+    padding: 10px;
     z-index: 1000; 
 }
 #main-header .hover-text{
     display: block;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 20px;
     white-space: nowrap;
     z-index: 100;
     opacity: 0;
@@ -68,10 +66,10 @@ main {
     text-align: center;
     padding: 160px 20px 60px;
 }
-#main-big_bang{ 
+#main-big-bang{ 
     display: flex;
-    justify-content: left;
-    align-items: left;
+    flex-direction: column;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
     text-align: left;
@@ -91,12 +89,104 @@ h2:hover {
 /* --- PARAGRAPHES --- */
 p {
     color: #ffffff;
+    background-color:rgba(0,0,0,0.7);
+    margin: 0 0 20px 0;
+    padding: 10px;
 }
-#p-big_bang{
+.p-big-bang1{
     color:#ffffff;
     line-height: 1.9;
+    margin:0;
+    text-align:left;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+    position:relative;
 }
-    
+.p-big-bang3{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:left;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+    position:relative;
+}
+.p-big-bang5{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:left;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+    position:relative;
+}
+.p-big-bang7{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:left;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+    position:relative;
+}
+.p-big-bang9{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:left;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+    position:relative;
+}
+.p-big-bang2{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:right;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+}
+.p-big-bang4{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:right;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+}
+.p-big-bang6{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:right;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+}
+.p-big-bang8{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:right;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
+}
+.p-big-bang10{
+    color:#ffffff;
+    line-height: 1.9;
+    margin:0;
+    text-align:right;
+    padding-top:15%;
+    padding-bottom:5%;
+    z-index:1;
 }
 /* --- TABLES --- */
 table {
@@ -111,7 +201,7 @@ td, th {
 }
 
 /* --- IMAGE CONTAINERS --- */
-.image-container_standard {
+.image-container-standard {
   position: relative;
   width: 50vw;
   height: 50vh;
@@ -120,7 +210,7 @@ td, th {
   text-align: center;
 }
 
-.image-container_systeme_solaire {
+.image-container-systeme-solaire {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -130,7 +220,7 @@ td, th {
 }
 
 /* --- IMAGES --- */
-.img_standard {
+.img-standard {
   width: 70%;
   height: 70%;
   object-fit: cover;
@@ -140,16 +230,26 @@ td, th {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.img_systeme_solaire {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+.img-systeme-solaire {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity:0.95;
 }
-
+.img-big-bang1 {
+    width: 20vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    z-index:2;
+    position:absolute;
+    top:30%;
+    left:70%;
+}
 /* --- HIDDEN TEXT --- */
 .hidden-text {
   position: absolute;
@@ -167,12 +267,12 @@ td, th {
   z-index: 5;
 }
 
-.image-container_standard:hover .hidden-text {
+.image-container-standard:hover .hidden-text {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
 /*---BUTTON VERS LES INFOS GENERALES---*/
-.Infos_generales_systeme_solaire {
+.Infos-generales-systeme-solaire {
     background: rgba(0,0,0,0);
     color: #ffffff;
     border-radius: 6px;
@@ -199,23 +299,50 @@ td, th {
 .back-button:hover {
   background: rgba(255,255,255, 0.1);
 }
-/*---Random buttons---*/
-.découvrir-les-planetes {
-    position: fixed;
+.back-button .hover-text{
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
     color: #ffffff;
-    z-index: 2000; 
-    left: 70%;
-    top: 75px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    white-space: nowrap;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.txt-systeme_solaire {
+.back-button:hover .hover-text{
+    display:block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0%);
+}
+/*---Random buttons---*/
+.decouvrir-le-systeme-solaire {
     position: fixed;
     color: #ffffff;
     z-index: 2000; 
     left: 80%;
-    top: 75px;
+    top: 6%;
 }
-/* --- INFO BOX SYSTEME SOLAIRE --- */
-.info-box_systeme_solaire {
+.decouvrir-le-systeme-solaire-big-bang {
+    position: fixed;
+    color: #ffffff;
+    z-index: 2000; 
+    left: 70%;
+    top: 6%;
+}
+.txt-systeme-solaire {
+    position: fixed;
+    color: #ffffff;
+    z-index: 2000; 
+    left: 80%;
+    top:10%;
+    }
+/*info box*/
+.info-box-systeme-solaire {
   position: fixed;
   bottom: 30px;
   left: 50%;
@@ -227,24 +354,24 @@ td, th {
   width: 300px;
   text-align: center;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
   transition: opacity 0.5s ease;
   z-index: 1000;
 }
 
-.info-box_systeme_solaire.show {
+.info-box-systeme-solaire.show {
   display: block;
   opacity: 1;
 }
 
 /* --- ZONES CLICABLES --- */
-.zone_systeme_solaire {
+.zone-systeme-solaire {
   position: absolute;
   cursor: pointer;
   border-radius: 50%;
 }
 
-.zone_systeme_solaire:hover {
+.zone-systeme-solaire:hover {
   border-color: rgba(255,255,255,0.8);
   background-color: rgba(255,255,255,0.1);
 }
