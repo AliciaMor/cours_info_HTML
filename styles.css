@@ -85,7 +85,10 @@ h2:hover {
   color: #61153D;
   font-weight: bolder;
 }
-
+/*H3*/
+h3{
+  color:#ffffff;
+}
 /* --- PARAGRAPHES --- */
 p {
     color: #ffffff;
